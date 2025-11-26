@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Stray Kids</title> 
-
+    <title>Stray Kids</title> 
     <style>
       @font-face {
         font-family: "JustMeAgain";
@@ -10,7 +9,6 @@
         font-weight: normal;
         font-style: normal;
       }
-
       body {
         font-family: "Open Sans", sans-serif;
         font-size: 16px;
@@ -22,45 +20,8 @@
         background-position: center;
         background-repeat: no-repeat;
       }
-
-
-      h1 {
-        color: #a30202;
-        width: 1000px;
-        height: 300px;
-        margin: 20px auto;
-        border-radius: 10px;
-        font-size: 72px;
-        font-family: "JustMeAgain", sans-serif;
-        text-align: center;
-        background-image: url("Screenshot 2025-11-25 at 1.36.32 PM.png");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-
-      }
-
-      /* YouTube Video */
-      .video-container {
-        position: relative;
-        width: 100%;
-        max-width: 960px;
-        margin: 20px auto;
-        padding-bottom: 56.25%;
-        height: 0;
-        overflow: hidden;
-        border-radius: 10px;
-      }
-
-      .video-container iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border: 0;
-      }
-
+  
+   
       ul {
         list-style-type: none;
         margin: 0;
@@ -70,7 +31,6 @@
         justify-content: center;
         gap: 50px;
       }
-
       nav ul li a {
         margin: 0;
         padding: 50;
@@ -78,23 +38,18 @@
         text-align: center;
         color: #a30202;
       }
-
       nav ul li a:hover {
         background-color: #525252;
         color: #fff;
         border-radius: 10px;
       }
-
       .container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
         padding: 10px;
         margin-bottom: 40px;
-
-
       }
-
       .logo-container {
         width: 960px;
         margin: 10px auto;
@@ -103,13 +58,11 @@
         border-radius: 10px;
         background-color: #fff;
       }
-
       .logo-container img {
         width: 100%;
         height: auto;
         display: block;
       }
-
       .navli-container {
         width: 960px;
         background-color: #000;
@@ -117,7 +70,6 @@
         padding: 20px;
         border-radius: 10px;
       }
-
       .nav-container {
         width: 100%;
         max-width: 960px;
@@ -128,27 +80,61 @@
         background-position: center;
         background-repeat: no-repeat;
       }
-
       .nav-container ul li a {
         padding: 10px 15px;
         border-radius: 6px;
       }
-
-      .paragraph p {
-        color: #000;
-        width: 960px;
-        height: 100px;
+      .member-card {
+        width: 100%;
+        max-width: 960px;
+        margin: 20px auto;
+        background-color: #000;
         border-radius: 10px;
-        font-family: "Oswald", sans-serif;
-        text-align: center;
-        background-image: url("Screenshot 2025-11-25 at 2.12.05 PM.png");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        border: 8px solid #000;
-
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        color: #fff;
       }
-
+      .member-card.reverse {
+        flex-direction: row-reverse;
+        background-color: #fff;
+        color: #000;
+      }
+      .member-photo {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 5px solid #fff;
+        flex-shrink: 0;
+      }
+      .member-card.reverse .member-photo {
+        border-color: #000;
+      }
+      .member-info {
+        flex: 1;
+        text-align: left;
+      }
+      .member-name {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        font-family: "JustMeAgain", cursive;
+      }
+      .member-description {
+        line-height: 1.6;
+        margin-bottom: 10px;
+      }
+      .member-details {
+        font-size: 14px;
+        line-height: 1.8;
+      }
+      .member-icon {
+        width: 250px;
+        height: 250px;
+        flex-shrink: 0;
+      }
       footer {
         text-align: center;
         background-color: #000;
@@ -158,7 +144,6 @@
       }
     </style>
   </head>
-
   <body>
     <nav class="nav-container">
       <nav>
@@ -166,34 +151,175 @@
           <img src="photo1.png" alt="title page">
         </div>
         <ul class="navli-container">
-
           <ul>
-              <li><a href=" https://izzydipasta-ctrl.github.io/final-web/">HOME</a></li>
-              <li><a href="https://izzydipasta-ctrl.github.io/Members/ ">MEMBERS</a></li>
-              <li><a href="https://izzydipasta-ctrl.github.io/About/ ">SONGS</a></li>
-              <li><a href="https://izzydipasta-ctrl.github.io/Contact/">MUSIC VIDEOS</a></li>
-
+              <li><a href=" https://izzydipasta-ctrl.github.io/final-web/">HOME</a></li>
+              <li><a href="https://izzydipasta-ctrl.github.io/Members/ ">MEMBERS</a></li>
+              <li><a href="https://izzydipasta-ctrl.github.io/About/ ">SONGS</a></li>
+              <li><a href="https://izzydipasta-ctrl.github.io/Contact/">MUSIC VIDEOS</a></li>
           </ul>
+        </ul>
       </nav>
+    </nav>
 
-      <h1 id="site-title">Meet the Strays</h1>
-
-      <div class="paragraph">
-        <p>
-          Stray Kids is a South Korean boy group formed by JYP Entertainment in 2017. Known for their powerful performances, self-produced music, and authentic lyrics, the group inspires fans worldwide with messages about individuality, resilience, and self-discovery. With members contributing to songwriting, composing, and producing, Stray Kids has built a unique sound that blends energetic hip-hop, electronic, and rock influences. Their fandom, called STAY, plays a huge role in their journey — representing the idea that Stray Kids and STAY always “stay” together through every challenge and success.
-        </p>
+      <!-- Member Card 1 -->
+      <div class="member-card">
+        <img src="Felix_of_Stray_Kids_at_a_Louis_Vuitton_event,_August_22,_2025.png" alt="Member Photo" class="member-photo">
+        <div class="member-info">
+          <div class="member-name">Felix</div>
+          <div class="member-description">
+            Felix Yongbok Lee, known mononymously as Felix, is an Australian rapper and singer based in South Korea. He is a member of the South Korean boy band Stray Kids, formed by JYP Entertainment in 2017.
+          </div>
+          <div class="member-details">
+            <strong>Born:</strong> September 15, 2000 (age 25 years), Seven Hills, Australia<br>
+            <strong>Music group:</strong> Stray Kids (Since 2018)<br>
+            <strong>Siblings:</strong> Olivia Lee, Rachel Lee<br>
+            <strong>Full name:</strong> Felix Yongbok Lee<br>
+            <strong>Height:</strong> 1.71 m<br>
+            <strong>Nationality:</strong> Australian
+          </div>
+        </div>
+        <img src="felixskzoo.png" alt="Icon" class="member-icon">
       </div>
-      <!-- YouTube video -->
-      <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/NED7nev2ywQ?start=3" title="Straykidssong" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-        </iframe>
+
+      <!-- Member Card 2 (Reversed) -->
+      <div class="member-card reverse">
+        <img src="member2.jpg" alt="Member Photo" class="member-photo">
+        <div class="member-info">
+          <div class="member-name">Hyunjin</div>
+          <div class="member-description">
+            Hwang Hyun-jin, known mononymously as Hyunjin, is a South Korean rapper and singer. He is a member of the South Korean boy band Stray Kids, formed by JYP Entertainment in 2017. Aside from his work with Stray Kids, he has worked as a television presenter, hosting the weekly Korean music program Show!
+          </div>
+          <div class="member-details">
+            <strong>Born:</strong> March 20, 2000 (age 25 years), Seongnam-dong, Seoul, South Korea<br>
+            <strong>Music group:</strong> Stray Kids (Since 2018)<br>
+            <strong>Education:</strong> SOPA (2019), Seongnam Middle School<br>
+            <strong>Height:</strong> 1.79 m<br>
+            <strong>Full name:</strong> Hwang Hyun-jin
+          </div>
+        </div>
+        <img src="icon2.png" alt="Icon" class="member-icon">
       </div>
 
+      <!-- Member Card 3 -->
+      <div class="member-card">
+        <img src="member3.jpg" alt="Member Photo" class="member-photo">
+        <div class="member-info">
+          <div class="member-name">Bang Chan</div>
+          <div class="member-description">
+            Christopher Chahn Bahng, known professionally as Bang Chan, is an Australian singer, rapper, songwriter, and record producer based in South Korea. Signed to JYP Entertainment, he is the leader of the South Korean boy band Stray Kids and a member of 3RACHA, an in-house production team and sub-unit of Stray Kids.
+          </div>
+          <div class="member-details">
+            <strong>Born:</strong> October 3, 1997 (age 28 years), Sydney, Australia<br>
+            <strong>Music groups:</strong> Stray Kids (Since 2018), 3RACHA (Since 2017)<br>
+            <strong>Full name:</strong> Christopher Chahn Bahng<br>
+            <strong>Education:</strong> Newtown High School of the Performing Arts<br>
+            <strong>Height:</strong> 1.71 m
+          </div>
+        </div>
+        <img src="icon3.png" alt="Icon" class="member-icon">
+      </div>
+
+      <!-- Member Card 4 (Reversed) -->
+      <div class="member-card reverse">
+        <img src="member4.jpg" alt="Member Photo" class="member-photo">
+        <div class="member-info">
+          <div class="member-name">Lee Know</div>
+          <div class="member-description">
+            Lee Min-ho, better known by his stage name Lee Know, is a South Korean rapper and singer. He is a member of South Korean boy band Stray Kids, formed by JYP Entertainment in 2017. In addition to his work with Stray Kids, Lee Know served as a host for the music chart show, Show!
+          </div>
+          <div class="member-details">
+            <strong>Born:</strong> October 25, 1998 (age 27 years), Gimpo, South Korea<br>
+            <strong>Music group:</strong> Stray Kids<br>
+            <strong>Full name:</strong> Lee Min-ho<br>
+            <strong>Height:</strong> 1.72 m<br>
+            <strong>Instrument:</strong> Vocals<br>
+            <strong>Labels:</strong> JYP
+          </div>
+        </div>
+        <img src="icon4.png" alt="Icon" class="member-icon">
+      </div>
+
+      <!-- Member Card 5 -->
+      <div class="member-card">
+        <img src="member5.jpg" alt="Member Photo" class="member-photo">
+        <div class="member-info">
+          <div class="member-name">HAN</div>
+          <div class="member-description">
+            Han Ji-sung, known professionally as Han, is a South Korean rapper, singer, and songwriter. He is a member of the South Korean boy band Stray Kids and its production team, 3racha, both affiliated with JYP Entertainment.
+          </div>
+          <div class="member-details">
+            <strong>Born:</strong> September 14, 2000 (age 25 years), Seochang-dong<br>
+            <strong>Works:</strong> songs written<br>
+            <strong>Music groups:</strong> Stray Kids (Since 2018), 3RACHA (Since 2017)<br>
+            <strong>Full name:</strong> Han Ji-sung<br>
+            <strong>Nationality:</strong> South Korean<br>
+            <strong>Genres:</strong> K-pop, hip hop, electronica, R&B
+          </div>
+        </div>
+        <img src="icon5.png" alt="Icon" class="member-icon">
+      </div>
+
+      <!-- Member Card 6 (Reversed) -->
+      <div class="member-card reverse">
+        <img src="member6.jpg" alt="Member Photo" class="member-photo">
+        <div class="member-info">
+          <div class="member-name">I.N</div>
+          <div class="member-description">
+            Yang Jeong-in, known professionally as I.N, is a South Korean singer. He is a member of the South Korean boy band Stray Kids formed by JYP Entertainment in 2017. I.N made his acting debut in the final episode of the web series A-Teen 2 in 2019.
+          </div>
+          <div class="member-details">
+            <strong>Born:</strong> February 8, 2001 (age 24 years), Sillim-dong, Busan, South Korea<br>
+            <strong>Music group:</strong> Stray Kids (Since 2018)<br>
+            <strong>Height:</strong> 1.72 m<br>
+            <strong>Full name:</strong> Yang Jeong-in<br>
+            <strong>Nationality:</strong> Korean, South Korean
+          </div>
+        </div>
+        <img src="icon6.png" alt="Icon" class="member-icon">
+      </div>
+
+      <!-- Member Card 7 -->
+      <div class="member-card">
+        <img src="member7.jpg" alt="Member Photo" class="member-photo">
+        <div class="member-info">
+          <div class="member-name">Seungmin</div>
+          <div class="member-description">
+            Kim Seung-min, known mononymously as Seungmin, is a South Korean singer. He is a member of the South Korean boy band Stray Kids, formed by JYP Entertainment in 2017.
+          </div>
+          <div class="member-details">
+            <strong>Born:</strong> September 22, 2000 (age 25 years), Seoul, South Korea<br>
+            <strong>Music group:</strong> Stray Kids (Since 2018)<br>
+            <strong>Full name:</strong> Kim Seung-min<br>
+            <strong>Height:</strong> 1.78 m<br>
+            <strong>Education:</strong> SOPA<br>
+            <strong>Nationality:</strong> South Korean
+          </div>
+        </div>
+        <img src="icon7.png" alt="Icon" class="member-icon">
+      </div>
+
+      <!-- Member Card 8 (Reversed) -->
+      <div class="member-card reverse">
+        <img src="member8.jpg" alt="Member Photo" class="member-photo">
+        <div class="member-info">
+          <div class="member-name">Changbin</div>
+          <div class="member-description">
+            Seo Chang-bin, known mononymously as Changbin, is a South Korean rapper, singer, and songwriter. He is a member of the South Korean boy band Stray Kids and its production team, 3Racha, both affiliated with JYP Entertainment.
+          </div>
+          <div class="member-details">
+            <strong>Born:</strong> August 11, 1999 (age 26 years), Yongin-si, South Korea<br>
+            <strong>Music groups:</strong> Stray Kids (Since 2018), 3RACHA (Since 2017)<br>
+            <strong>Full name:</strong> Seo Chang-bin<br>
+            <strong>Height:</strong> 1.67 m<br>
+            <strong>Education:</strong> Bora High School<br>
+            <strong>Nationality:</strong> South Korean
+          </div>
+        </div>
+        <img src="icon8.png" alt="Icon" class="member-icon">
+      </div>
 
       <footer>
-          
+          
       </footer>
-
-
   </body>
 </html>
